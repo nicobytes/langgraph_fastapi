@@ -59,6 +59,11 @@ dependencies = [
     { name = "pydantic-settings" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "fastapi", extras = ["standard"], specifier = ">=0.116.1" },
@@ -71,6 +76,9 @@ requires-dist = [
     { name = "langgraph-sdk", specifier = ">=0.2.5" },
     { name = "pydantic-settings", specifier = ">=2.10.1" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=6.30.1" }]
 
 [[package]]
 name = "appnope"
