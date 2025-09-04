@@ -1,0 +1,19 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.116.1",
+    "ipykernel>=6.30.1",
+    "langchain==1.0.0a3",
+    "langchain-anthropic==1.0.0a1",
+    "langchain-openai==1.0.0a2",
+    "langgraph==1.0.0a2",
+    "langgraph-cli[inmem]>=0.4.0",
+    "langgraph-sdk>=0.2.5",
+    "pydantic-settings>=2.10.1",
+]
+[tool.setuptools]
+packages = ["app"]
